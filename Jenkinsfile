@@ -1,7 +1,7 @@
 pipeline {
     agent any
-    parameters {
-  string defaultvalue: '10', name: 'BUILD_NO'
+ parameters {
+  booleanParam 'BUILD_NO'
 }
     stages {
         stage('Compile') {
